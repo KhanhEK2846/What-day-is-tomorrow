@@ -13,17 +13,6 @@ typedef struct OneDay
 }OD;
 
 
-struct HS
-
-{
-
-    char ten [100];
-
-    int toan,van;
-
-    float dtb;
-};
-
 
 void Nhap(OD& x, int& LastDay)
 
@@ -130,38 +119,6 @@ void NextDay(OD x,OD &y,int n)
 }
 
 
-void Nhap1 (HS &A)
-
-{
-
-    cout<<"Nhap ten: "<<endl;
-
-    gets(A.ten);
-
-    fflush(stdin);
-
-    cout<<"Diem toan: "<<endl;
-
-    cin>>A.toan;
-
-    cout<<"Diem van: "<<endl;
-
-    cin>>A.van;
-
-    A.dtb= (float)(A.toan+A.van)/2;
-
-}
-
-
-void Xuat1(HS A)
-
-{
-
-    cout<<"Ten: "<<A.ten<<endl;
-
-    cout<<"DTB: "<<A.dtb<<endl;
-
-}
 
 
 int main()
@@ -178,11 +135,7 @@ int main()
 
     cout << "Ngay ke tiep la: " << Day2.DD << "/" << Day2.MM << "/" << Day2.YYYY;
 
-    HS A;
 
-    Nhap1(A);
-
-    Xuat1(A);
 
 	return 0;
 
